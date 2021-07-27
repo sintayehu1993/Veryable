@@ -36,3 +36,52 @@
     transform: rotate(360deg);
   }
 }
+
+/* .group-logo {
+  justify-content: center;
+  padding-left: 50%;
+  padding-right: 50%;
+  padding-bottom: 0;
+} 
+.user-container {
+  margin-top:16px;
+  margin-left: 12px;
+  margin-right: 12px;
+  padding: 80px;
+}
+.nav-header {
+  margin-bottom: 0;
+  justify-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.header-container {
+  margin-top: 0;
+  background: lightblue;
+  align-items: center;
+  align-content: center;
+}
+.user-detail {
+  background:pink;
+  margin-top: 0;
+
+}
+.user-card{
+background:green;
+}
+.expand-more-icon {
+  background:yellow;
+}
+.user-role{ 
+  font-size:10px;
+  color: #4A4A4A;
+}
+.user-email{
+  font-size:10px;
+  color: #7E7E7E;
+}
+
+*/
