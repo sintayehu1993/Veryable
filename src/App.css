@@ -1,6 +1,6 @@
 .App {
   text-align: left;
-  background: gray;
+  background: rgb(211, 214, 214);
 }
 
 .App-logo {
@@ -38,16 +38,6 @@
   }
 }
 
-/* .group-logo {
-  justify-content: center;
-  padding-left: 50%;
-  padding-right: 50%;
-  padding-bottom: 0;
-  .user-detail {
-  background: pink;
-  margin-top: 0;
-}
-} */
 .header-container {
   display: flex;
   background: white;
@@ -55,7 +45,6 @@
   height: calc(100% - 64px);
 }
 .group-logo{
-  fill: red;
   padding-top: 0;
 }
 
@@ -75,16 +64,8 @@ h1 {
   margin-right: 12px;
   padding-top: 16px;
   padding-bottom: 16px;
-  background: gray;
 }
-/* 
-.user-container{
-  padding-top: 16px;
-  padding-bottom: 16px;
-  margin-left: 0;
-  
-}
-*/
+
 
 .user-card-info {
   display: flex;
@@ -99,10 +80,12 @@ h1 {
   background: white;
 }
 .expand-more-icon {
+  
   height: 40px;
   margin-left: auto;
   margin-right: 12px;
 }
+
 .user-icon {
   margin-top: 15px;
   height: 40px;

@@ -1,50 +1,32 @@
-import React, { useState, useContext } from 'react';
-import { UsersContext } from '../Contexts/UsersContext';
-// import { formatRelative } from "date-fns";
+import React from 'react';
 
-// const formatDate = (date) => {
-//   let formattedDate = "";
-//   if (date) {
-//     // Convert the date in words relative to the current date
-//     formattedDate = formatRelative(date, new Date());
-//     // Uppercase the first letter
-//     formattedDate =
-//       formattedDate.charAt(0).toUpperCase() + formattedDate.slice(1);
-//   }
-//   return formattedDate;
-// };
-export default function UserDetail({ user, id }) {
-  // const {id, street, city, state, zip, phone, createdAt, lastLoggedIn} = useContext(UsersContext);
-  // console.log('what is phone', typeof user.phone);
+export default function UserDetail({ user }) {
   const getDate = (timestamp) => {
     let dateObj = new Date(timestamp);
-    console.log('what is month', dateObj)
+    console.log('what is month', dateObj);
     let month = dateObj.getMonth() + 1;
     let year = dateObj.getFullYear();
     let date = dateObj.getDate();
     //---- exact time
-    let hours = dateObj.getHours()
-    let minutes = dateObj.getMinutes()
-    
-    let ampm = hours >= 12 ? "PM" : "AM"
+    let hours = dateObj.getHours();
+    let minutes = dateObj.getMinutes();
+
+    let ampm = hours >= 12 ? 'PM' : 'AM';
     hours = hours % 12;
-    minutes = minutes < 19  ? '0'+minutes : minutes;
-    let exactTime = hours + ':' + minutes + ' ' + ampm
+    minutes = minutes < 19 ? '0' + minutes : minutes;
+    let exactTime = hours + ':' + minutes + ' ' + ampm;
     return `${month}/${date}/${year} ${exactTime}`;
   };
   const setPhoneNum = (str) => {
-    // console.log('convert', str, str.split(''))
-    str.split('')
+    str.split('');
     let result = '';
     for (let i = 0; i < str.length; i++) {
       // console.log('resturn string', result)
       if (i === 0) {
         result += `(${str[i]}`;
-      }
-      else if (i === 3) {
+      } else if (i === 3) {
         result += `) ${str[i]}`;
-      }
-      else if (i === 5) {
+      } else if (i === 5) {
         result += `${str[i]}-`;
       } else {
         result += str[i];
