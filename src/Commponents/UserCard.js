@@ -21,13 +21,17 @@ export default function UserCard() {
     <div className="user-container">
       {users.map((user) => (
         <ul key={user.id} className="user-list">
-          <div>
+          
             {' '}
-            <li className="user-card">
+            <li className={id === user.id ? "user-card-info" :"user-card-infoMore" }>
               <img className="user-icon" src={userLogo} alt="user" />
+              <div className="user-Info">
               <h3 className="user-name">{`${user.firstName} ${user.lastName}`}</h3>
               <h4 className="user-role">{user.role}</h4>
               <h4 className="user-email">{user.email}</h4>
+              <br />
+              {id === user.id ? <UserDetail user={user} id={user.id} /> : null}
+              </div>
               <img
               onClick={() => {
                 setClick(!click);
@@ -42,9 +46,6 @@ export default function UserCard() {
               alt="expand"
             />
             </li>
-           
-            {id === user.id ? <UserDetail user={user} id={user.id} /> : null}
-          </div>
         </ul>
       ))}
     </div>

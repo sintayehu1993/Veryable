@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  text-align: left;
+  background: gray;
 }
 
 .App-logo {
@@ -42,46 +43,107 @@
   padding-left: 50%;
   padding-right: 50%;
   padding-bottom: 0;
-} 
+  .user-detail {
+  background: pink;
+  margin-top: 0;
+}
+} */
+.header-container {
+  display: flex;
+  background: white;
+  text-transform: uppercase;
+  height: calc(100% - 64px);
+}
+.group-logo{
+  fill: red;
+  padding-top: 0;
+}
+
+h1 {
+  font-size: 18px;
+  color: #4a4a4a;
+  padding-top: 0;
+  margin-left: 50%;
+  font-weight: Semi-bold;
+}
+/*---------------------------------------------------------------- */
+
 .user-container {
-  margin-top:16px;
+  margin-top: 16px;
+  margin-bottom: 12px;
   margin-left: 12px;
   margin-right: 12px;
-  padding: 80px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background: gray;
 }
-.nav-header {
-  margin-bottom: 0;
-  justify-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  padding-right: 0;
-  padding-left: 0;
+/* 
+.user-container{
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-left: 0;
+  
 }
+*/
 
-.header-container {
-  margin-top: 0;
-  background: lightblue;
-  align-items: center;
-  align-content: center;
+.user-card-info {
+  display: flex;
+  height: calc(100% - 270px);
+  padding-bottom: 16px;
+  background: white;
 }
-.user-detail {
-  background:pink;
-  margin-top: 0;
-
-}
-.user-card{
-background:green;
+.user-card-infoMore {
+  display: flex;
+  padding-bottom: 16px;
+  height: calc(100% - 80px);
+  background: white;
 }
 .expand-more-icon {
-  background:yellow;
+  height: 40px;
+  margin-left: auto;
+  margin-right: 12px;
 }
-.user-role{ 
-  font-size:10px;
-  color: #4A4A4A;
+.user-icon {
+  margin-top: 15px;
+  height: 40px;
+  margin-left: 10px;
+  margin-right: 25px;
 }
-.user-email{
-  font-size:10px;
-  color: #7E7E7E;
+.user-Info {
+  margin-top: 15px;
+  padding-left: 0px;
 }
 
-*/
+.user-name {
+  padding-left: 0px;
+  font-size: 12px;
+  color: #4A4A4A;
+  margin-bottom: 0;
+  font-weight: Semi-bold;
+}
+.user-role {
+  font-size: 10px;
+  color: #4a4a4a;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.user-email {
+  font-size: 10px;
+  color: #7e7e7e;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 12px;
+  padding-left: 0px;
+  color: #4a4a4a;
+}
+p{
+  padding-left: 0px;
+  font-size: 10px;
+  font-size: 10px;
+  color: #4a4a4a;
+  margin-bottom: 0;
+  margin-top: 0;
+}
